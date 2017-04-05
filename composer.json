@@ -1,0 +1,27 @@
+{
+  "name": "silverstripe-modular-project/silverstripe-menus",
+  "type": "silverstripe-module",
+  "description": "Creates multiple menus.",
+  "license": "BSD",
+  "authors": [
+    {
+      "name": "Gorrie Coe",
+      "email": "gorriecoe@gmail.com"
+    }
+  ],
+  "keywords": [
+    "silverstripe",
+    "cms",
+    "menu",
+    "link"
+  ],
+  "require": {
+    "silverstripe/framework": ">=3.5",
+    "silverstripe/cms": ">=3.5",
+    "silverstripe-australia/gridfieldextensions": "^1.3.0",
+    "silverstripe-modular-project/silverstripe-links": "^1.0.0"
+  },
+  "extra": {
+    "installer-name": "menus"
+  }
+}

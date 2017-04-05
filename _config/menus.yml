@@ -1,0 +1,11 @@
+---
+Name: menus
+After:
+  - 'framework/*'
+  - 'cms/*'
+Only:
+  moduleexists: 'subsite'
+---
+MenuSet:
+  extensions:
+    - MenuSetSubsiteExtension
