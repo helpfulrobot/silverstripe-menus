@@ -24,11 +24,11 @@ class MenuManagerTemplateProvider implements TemplateGlobalProvider
      */
     public static function MenuSet($slug)
     {
-        return MenuSet::get()
-            ->filter(
-                array(
-                    'Slug' => $slug
-                )
-            )->first()->Links()->sort('Sort ASC');
+        $filter = array(
+            'Slug' => $slug
+        );
+        if ($MenuSet = MenuSet::get()->filter($filter)->first()) {
+            return $MenuSet->Links()->sort('Sort ASC');
+        }
     }
 }
