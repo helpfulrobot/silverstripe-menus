@@ -160,4 +160,13 @@ class MenuSet extends DataObject
             }
         }
     }
+
+    /**
+     * Generates a link to edit this page in the CMS.
+     *
+     * @return string
+     */
+    public function CMSEditLink() {
+        return Controller::join_links(Controller::curr()->Link(), 'EditForm', 'field', $this->ClassName, 'item', $this->ID);
+    }
 }
