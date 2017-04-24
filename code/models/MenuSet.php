@@ -79,36 +79,46 @@ class MenuSet extends DataObject
             'Links'
         ));
 
-        $fields->addFieldToTab(
-            'Root.Main',
-            GridField::create(
-                'Links',
-                'Links',
-                $this->Links(),
-                GridFieldConfig_RelationEditor::create()
-                    ->addComponent(new GridFieldOrderableRows('Sort'))
-            )
-        );
+        if ($this->ID) {
+            $fields->addFieldToTab(
+                'Root.Main',
+                GridField::create(
+                    'Links',
+                    'Links',
+                    $this->Links(),
+                    GridFieldConfig_RelationEditor::create()
+                        ->addComponent(new GridFieldOrderableRows('Sort'))
+                )
+            );
+        }
         return $fields;
     }
 
     /**
-     * Creating Permissions
+     * Creating Permissions.
+     * This module is not  intended to allow creating menus via CMS.  However it
+     * still allows create via a 3rd party module.
      * @return boolean
      */
     public function canCreate($member = null)
     {
-        return false;
+        $cancreate = false;
+        $this->extend('updateCanCreate', $cancreate);
+        return $cancreate;
     }
 
     /**
      * Deleting Permissions
+     * This module is not  intended to allow deleting menus via CMS.  However it
+     * still allows delete via a 3rd party module.
      * @param mixed $member
      * @return boolean
      */
     public function canDelete($member = null)
     {
-        return false;
+        $candelete = false;
+        $this->extend('updateCanDelete', $candelete);
+        return $candelete;
     }
 
     /**
