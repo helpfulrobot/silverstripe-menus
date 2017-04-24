@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class MenuSet
+ * MenuSet
  *
  * @package silverstripe
  * @subpackage menus
@@ -34,7 +34,7 @@ class MenuSet extends DataObject
      * @var array
      */
     private static $many_many = array(
-        'Links' => 'Link',
+        'Links' => 'MenuLink',
     );
 
     /**

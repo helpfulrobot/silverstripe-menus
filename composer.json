@@ -1,8 +1,8 @@
 {
   "name": "silverstripe-modular-project/silverstripe-menus",
-  "type": "silverstripe-module",
   "description": "Creates multiple menus.",
-  "license": "BSD",
+  "type": "silverstripe-module",
+  "license": "BSD 3-Clause",
   "authors": [
     {
       "name": "Gorrie Coe",
@@ -11,10 +11,12 @@
   ],
   "keywords": [
     "silverstripe",
+    "modular",
     "cms",
     "menu",
     "link"
   ],
+  "homepage": "http://github.com/silverstripe-modular-project/silverstripe-menus",
   "require": {
     "silverstripe/framework": ">=3.5",
     "silverstripe/cms": ">=3.5",
