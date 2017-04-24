@@ -9,3 +9,10 @@ Only:
 MenuSet:
   extensions:
     - MenuSetSubsiteExtension
+---
+Only:
+  moduleexists: 'translatable'
+---
+MenuSet:
+  extensions:
+    - Translatable
