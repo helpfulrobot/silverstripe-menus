@@ -4,7 +4,7 @@
  * CMS Admin area to maintain menus
  *
  * @package silverstripe
- * @subpackage menus
+ * @subpackage silverstripe-menus
  */
 class MenuSetAdmin extends ModelAdmin
 {

@@ -7,6 +7,16 @@ Composer is the recommended way of installing SilverStripe modules.
 composer require silverstripe-modular-project/silverstripe-menus
 ```
 
+## Requirements
+
+- silverstripe/framework 3.5.\*
+- silverstripe-australia/gridfieldextensions 1.3.\*
+- silverstripe-modular-project/silverstripe-links 1.0.*
+
+## Maintainers
+
+- [Gorrie Coe](https://github.com/gorriecoe)
+
 ## Creating custom menus
 
 As it is common to reference MenuSets by name in templates, you can configure sets to be created automatically during the /dev/build task. These sets cannot be deleted through the CMS.

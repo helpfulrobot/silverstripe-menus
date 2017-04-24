@@ -4,7 +4,7 @@
  * Adds subsite support if installed
  *
  * @package silverstripe
- * @subpackage menus
+ * @subpackage silverstripe-menus
  */
 class MenuSetSubsiteExtension extends DataExtension
 {

@@ -4,7 +4,7 @@
  * Adds MenuSet variable to templates
  *
  * @package silverstripe
- * @subpackage menus
+ * @subpackage silverstripe-menus
  */
 class MenuManagerTemplateProvider implements TemplateGlobalProvider
 {

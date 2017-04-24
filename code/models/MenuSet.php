@@ -4,7 +4,7 @@
  * MenuSet
  *
  * @package silverstripe
- * @subpackage menus
+ * @subpackage silverstripe-menus
  */
 class MenuSet extends DataObject
 {

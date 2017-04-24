@@ -3,7 +3,7 @@
  * MenuLink
  *
  * @package silverstripe
- * @subpackage mysite
+ * @subpackage silverstripe-menus
  */
 class MenuLink extends Link
 {
