@@ -20,7 +20,7 @@
   "require": {
     "silverstripe/framework": ">=3.5",
     "silverstripe-australia/gridfieldextensions": "^1.3.0",
-    "silverstripe-modular-project/silverstripe-links": "^1.0.0"
+    "silverstripe-modular-project/silverstripe-links": "dev-master"
   },
   "extra": {
     "installer-name": "menus"
